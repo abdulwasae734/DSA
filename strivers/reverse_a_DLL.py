@@ -11,6 +11,8 @@ class Solution:
         # code here
         if not head:
             return None
+        
+
             
         curr = head
         prev = None

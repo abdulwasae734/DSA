@@ -1,11 +1,11 @@
-'''
+
 class Node:
 	def __init__(self, data):
 		self.data = data
 		self.next = None
 		self.prev = None
 
-'''
+
 
 class Solution:
     def insertAtPos(self, head, p, x):
