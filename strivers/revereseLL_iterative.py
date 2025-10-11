@@ -9,9 +9,14 @@ class Solution:
         if head is None or head.next is None:
             return head
         
-        new_head = self.reverseList(head.next)
+        prev = None
+        curr = head
+
+        while curr.next is not None:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+
         
-        head.next.next = head
-        head.next = None
-        
-        return new_head
+        return curr
