@@ -19,7 +19,7 @@ class Solution:
         
         for i in range(1, len(arr)):
             newNode = Node(arr[i])
-            curr.next = newNode
-            newNode.prev = curr
-            curr = curr.next
+            curr.next = newNode # type: ignore
+            newNode.prev = curr # type: ignore
+            curr = curr.next # type: ignore
         return head
