@@ -4,8 +4,9 @@ class Solution:
         ans = 0
         length = len(s)
 
+
         for i, pussy in enumerate(s):
-            if pussy == '1':
+            if pussy == '1': 
                 ones += 1
             else:
                 if i + 1 == length:
